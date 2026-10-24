@@ -12,7 +12,132 @@
 <meta property="og:description" content="A vanilla-style OneBlock server where every island is its own private world. Server address: mc.in-sky.eu. Open beta.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2387ceeb'/%3E%3Crect x='4' y='6' width='8' height='3' fill='%235dab3c'/%3E%3Crect x='4' y='9' width='8' height='5' fill='%238b5a2b'/%3E%3C/svg%3E">
-<!-- Step 2 will add the JSON-LD structured data here. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://in-sky.eu/#org",
+      "name": "IN-SKY.EU",
+      "url": "https://in-sky.eu/",
+      "description": "mc.in-sky.eu: a vanilla-style OneBlock server where every island is its own private world.",
+      "sameAs": [
+        "https://discord.in-sky.eu"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://in-sky.eu/#website",
+      "name": "IN-SKY.EU",
+      "url": "https://in-sky.eu/",
+      "inLanguage": "en",
+      "description": "Minecraft Java Edition 26.3 OneBlock server in open beta. Server address: mc.in-sky.eu.",
+      "publisher": {
+        "@id": "https://in-sky.eu/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://in-sky.eu/#faq",
+      "url": "https://in-sky.eu/",
+      "isPartOf": {
+        "@id": "https://in-sky.eu/#website"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is OneBlock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OneBlock is a Minecraft survival challenge, first made as a map by IJAMinecraft. You start on one block floating in an empty world. When you mine it, it comes back as a different block. Over time you get new blocks, mobs and chests as you move through phases. You use what you get to build an island."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Minecraft: Java Edition 26.3. Go to Multiplayer, click Add Server, and enter mc.in-sky.eu. Join, then type /is go to create your island."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The server is fully free, and there is nothing to buy. You need your own copy of Minecraft: Java Edition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the server in beta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. IN-SKY.EU is in open beta. Bugs can appear anywhere on the server. Early players have already helped us find and fix bugs, and your feedback helps too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I report bugs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the bug report form at feedback.in-sky.eu. You can also ask on Discord at discord.in-sky.eu. Tell us what happened, where, and what you expected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do islands work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every island is its own private world, not a plot on a shared map. You create one with /is go. Invite friends with /is team invite <player>. Each person gets a rank that controls what they can do. Your island grows when you find the rare \"More Space!\" item, and your island level goes up as you place blocks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I play OneBlock with friends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Invite them to your team, and you all share the same island, block and progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I play on Bedrock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not right now. The server is Java Edition only, version 26.3."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Be nice, don't spam, don't advertise, and leave players alone if they ask. That's it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after the last phase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After Dappled Forest, at 16,000 blocks, the block loops back to the Plains phase and the cycle starts again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my island?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your island, items and XP save automatically. Because we are in beta, please report anything that looks wrong at feedback.in-sky.eu."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --bg: #f7fafc; --surface: #ffffff; --text: #1a202c; --muted: #4a5568;

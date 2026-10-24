@@ -1,0 +1,5 @@
+# Allow all crawlers to read the whole site.
+User-agent: *
+Allow: /
+
+Sitemap: https://in-sky.eu/sitemap.xml
