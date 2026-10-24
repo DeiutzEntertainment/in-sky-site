@@ -11,6 +11,7 @@
 <meta property="og:title" content="IN-SKY.EU – OneBlock Server (Java 26.3)">
 <meta property="og:description" content="A vanilla-style OneBlock server where every island is its own private world. Server address: mc.in-sky.eu. Open beta.">
 <meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="IN-SKY.EU updates" href="/feed.xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2387ceeb'/%3E%3Crect x='4' y='6' width='8' height='3' fill='%235dab3c'/%3E%3Crect x='4' y='9' width='8' height='5' fill='%238b5a2b'/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
@@ -212,6 +213,7 @@
       <li><a href="#phases">Phases</a></li>
       <li><a href="#commands">Commands</a></li>
       <li><a href="#rules">Rules</a></li>
+      <li><a href="/updates/">Updates</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </div>
@@ -243,6 +245,7 @@
   <p class="note"><strong>We are in open beta.</strong> Bugs can show up anywhere on the server. Players who joined early have already helped us find and fix bugs. If you find one, please report it at <a href="https://feedback.in-sky.eu">feedback.in-sky.eu</a>.</p>
 
   <p>Join the community on Discord: <a href="https://discord.in-sky.eu">discord.in-sky.eu</a></p>
+  <p>Latest update: <a href="/updates/1.1.3.0-beta/">1.1.3.0 – island ranks, trusted players and permissions</a>. See <a href="/updates/">all updates</a>.</p>
 </header>
 
 <section id="features">
@@ -264,7 +267,7 @@
     <li><strong>Trusted</strong> – can break, place and use blocks.</li>
     <li><strong>Guest</strong> – cannot build.</li>
   </ul>
-  <p>Owners and co-owners can ban players from their island and send visitors away.</p>
+  <p>Owners and co-owners can ban players from their island and send visitors away. They can also change what each rank is allowed to do with <code>/is permissions</code>.</p>
 
   <h3>Island protection</h3>
   <p>Each island has its own protection settings. During the beta, every island uses the same defaults:</p>
@@ -354,6 +357,7 @@
     <dt>/is setspawn · /is setname</dt><dd>Set your island's spawn point or name.</dd>
     <dt>/is trust · /is untrust &lt;player&gt;</dt><dd>Let a player build on your island, or remove that.</dd>
     <dt>/is setrank &lt;player&gt; &lt;member|co_owner&gt;</dt><dd>Change a team member's rank.</dd>
+    <dt>/is permissions</dt><dd>Choose which rank can do what on your island (menu). Also <code>/is permissions set</code>, <code>reset</code> and <code>list</code>.</dd>
     <dt>/is kick · /is leave</dt><dd>Remove a team member, or leave a team.</dd>
     <dt>/is ban · /is unban · /is banlist</dt><dd>Ban players from your island and manage the list.</dd>
     <dt>/is expel &lt;player&gt;</dt><dd>Send a visitor off your island.</dd>
@@ -437,7 +441,7 @@
 <footer>
   <div class="wrap">
     <p><strong>IN-SKY.EU</strong> · Server address: <code>mc.in-sky.eu</code> · Java Edition 26.3 · Open beta</p>
-    <p><a href="https://discord.in-sky.eu">Discord</a> · <a href="https://feedback.in-sky.eu">Report a bug</a></p>
+    <p><a href="https://discord.in-sky.eu">Discord</a> · <a href="https://feedback.in-sky.eu">Report a bug</a> · <a href="/updates/">Updates</a></p>
     <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
   </div>
 </footer>

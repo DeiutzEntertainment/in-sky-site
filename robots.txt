@@ -1,5 +1,8 @@
 # Allow all crawlers to read the whole site.
 User-agent: *
 Allow: /
+# Source files for the Updates pages (the built pages live in /updates/).
+Disallow: /posts/
+Disallow: /tools/
 
 Sitemap: https://in-sky.eu/sitemap.xml

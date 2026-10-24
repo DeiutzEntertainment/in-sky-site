@@ -1,0 +1,72 @@
+:root {
+  --bg: #f7fafc; --surface: #ffffff; --text: #1a202c; --muted: #4a5568;
+  --accent: #2b6cb0; --accent-text: #ffffff; --border: #d7dee8; --code: #edf2f7;
+  --ph-bg: #fff3bf; --ph-text: #5c4400;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1720; --surface: #17212d; --text: #e6edf3; --muted: #a9b6c4;
+    --accent: #63b3ed; --accent-text: #0f1720; --border: #2a3a4c; --code: #1f2c3a;
+    --ph-bg: #4a3b00; --ph-text: #ffe8a3;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1720; --surface: #17212d; --text: #e6edf3; --muted: #a9b6c4;
+  --accent: #63b3ed; --accent-text: #0f1720; --border: #2a3a4c; --code: #1f2c3a;
+  --ph-bg: #4a3b00; --ph-text: #ffe8a3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header { padding: 48px 0 24px; }
+nav { border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 1; }
+nav ul { list-style: none; margin: 0; padding: 10px 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--accent); }
+h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 26px; margin: 48px 0 12px; padding-top: 8px; }
+h3 { font-size: 19px; margin: 24px 0 6px; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+.tagline { font-size: 20px; color: var(--muted); margin: 0 0 24px; }
+.ip-box {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; margin: 0 0 16px;
+}
+.ip-box code { font-size: 22px; font-weight: 700; background: none; padding: 0; }
+button {
+  font: inherit; font-size: 15px; cursor: pointer; border: 0; border-radius: 8px;
+  padding: 8px 14px; background: var(--accent); color: var(--accent-text);
+}
+.facts { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0 0 16px; }
+.facts li { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: 15px; }
+.note { background: var(--surface); border-left: 4px solid var(--accent); padding: 12px 16px; border-radius: 6px; }
+code { background: var(--code); padding: 1px 6px; border-radius: 4px; font-size: 0.92em; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--surface); }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-weight: 600; }
+td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+dl.cmds dt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; margin-top: 10px; }
+dl.cmds dd { margin: 2px 0 0 0; color: var(--muted); }
+details { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 10px 0 0; }
+.ph { background: var(--ph-bg); color: var(--ph-text); padding: 0 4px; border-radius: 3px; }
+footer { margin-top: 64px; padding: 24px 0 48px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+
+/* Updates pages */
+.post-head { padding: 40px 0 8px; }
+.crumbs { margin: 0 0 8px; font-size: 15px; }
+.meta { color: var(--muted); font-size: 15px; margin: 0 0 12px; }
+.lead { font-size: 19px; }
+article h2 { font-size: 22px; margin: 36px 0 10px; }
+.posts { list-style: none; padding: 0; margin: 0; }
+.posts li { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin: 0 0 14px; }
+.posts h2 { font-size: 21px; margin: 0 0 4px; padding: 0; }
+.posts p { margin: 6px 0 0; }
+.pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 32px; }

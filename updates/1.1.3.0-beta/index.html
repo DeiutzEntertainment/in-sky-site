@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update 1.1.3.0: island ranks, trusted players and permissions | IN-SKY.EU</title>
+<meta name="description" content="Give friends a rank, trust players to build without joining your team, and choose which rank can do what on your island. Plus more ores and diamonds in several phases.">
+<link rel="canonical" href="https://in-sky.eu/updates/1.1.3.0-beta/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://in-sky.eu/updates/1.1.3.0-beta/">
+<meta property="og:title" content="Update 1.1.3.0: island ranks, trusted players and permissions | IN-SKY.EU">
+<meta property="og:description" content="Give friends a rank, trust players to build without joining your team, and choose which rank can do what on your island. Plus more ores and diamonds in several phases.">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="IN-SKY.EU updates" href="/feed.xml">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Update 1.1.3.0: island ranks, trusted players and permissions",
+  "description": "Give friends a rank, trust players to build without joining your team, and choose which rank can do what on your island. Plus more ores and diamonds in several phases.",
+  "datePublished": "2026-10-24",
+  "url": "https://in-sky.eu/updates/1.1.3.0-beta/",
+  "mainEntityOfPage": "https://in-sky.eu/updates/1.1.3.0-beta/",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Organization",
+    "name": "IN-SKY.EU",
+    "url": "https://in-sky.eu/"
+  },
+  "publisher": {
+    "@id": "https://in-sky.eu/#org"
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://in-sky.eu/updates/#blog"
+  }
+}
+</script>
+</head>
+<body>
+<nav aria-label="Site">
+  <div class="wrap">
+    <ul>
+      <li><a href="/">IN-SKY.EU</a></li>
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#join">How to join</a></li>
+      <li><a href="/updates/">Updates</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="wrap">
+<article>
+<header class="post-head">
+  <p class="crumbs"><a href="/updates/">Updates</a></p>
+  <h1>Update 1.1.3.0: island ranks, trusted players and permissions</h1>
+  <p class="meta">Version 1.1.3.0-BETA · <time datetime="2026-10-24">24 October 2026</time></p>
+  <p class="lead">Give friends a rank, trust players to build without joining your team, and choose which rank can do what on your island. Plus more ores and diamonds in several phases.</p>
+</header>
+<p>This update is about who can do what on your island. Owners and co-owners can now give players ranks, trust players to build, and change what each rank is allowed to do. We also added more ores and better loot to several phases.</p>
+
+<h2>Island ranks</h2>
+<p>Every player on your island now has a rank: <strong>Owner</strong>, <strong>Co-Owner</strong>, <strong>Member</strong>, <strong>Trusted</strong> or <strong>Guest</strong>. A player with no rank is a Guest.</p>
+<ul>
+  <li><code>/is setrank &lt;player&gt; &lt;member|co_owner&gt;</code> changes a team member's rank. Stand on your island when you use it.</li>
+  <li>You can't change your own rank, the owner's rank, or the rank of someone above you.</li>
+  <li>Both players get a message when a rank changes.</li>
+</ul>
+
+<h2>Trusted players</h2>
+<p>Want a friend to help build without joining your team? Trust them.</p>
+<ul>
+  <li><code>/is trust &lt;player&gt;</code> lets a player break, place and use blocks on your island.</li>
+  <li><code>/is untrust &lt;player&gt;</code> removes that again.</li>
+  <li>Trusted players don't count toward the team limit of 5 members.</li>
+  <li>Banned players can't be trusted. Unban them first.</li>
+</ul>
+
+<h2>Choose what each rank can do</h2>
+<p>Type <code>/is permissions</code> to open a menu with one book per permission. Left-click a book to raise the rank it needs. Right-click to lower it.</p>
+<ul>
+  <li><code>/is permissions set &lt;permission&gt; &lt;rank&gt;</code> sets it by command.</li>
+  <li><code>/is permissions reset &lt;permission&gt;</code> puts it back to the default.</li>
+  <li><code>/is permissions list</code> shows every permission and its rank.</li>
+</ul>
+<p>By default, co-owners and the owner can change permissions. You can only change a permission if it doesn't need a rank higher than your own.</p>
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th scope="col">Permission</th><th scope="col">What it allows</th><th scope="col">Default rank</th></tr></thead>
+  <tbody>
+    <tr><td>Teleport</td><td>Teleport to the island</td><td>Guest</td></tr>
+    <tr><td>Break</td><td>Break blocks</td><td>Trusted</td></tr>
+    <tr><td>Place</td><td>Place blocks</td><td>Trusted</td></tr>
+    <tr><td>Interact</td><td>Use blocks and items</td><td>Trusted</td></tr>
+    <tr><td>PvE</td><td>Hurt mobs</td><td>Member</td></tr>
+    <tr><td>Ban list</td><td>See banned players</td><td>Member</td></tr>
+    <tr><td>Upgrade radius</td><td>Upgrade the island border</td><td>Member</td></tr>
+    <tr><td>Ban / Unban</td><td>Ban or unban a player from the island</td><td>Co-Owner</td></tr>
+    <tr><td>Kick</td><td>Kick a player from the team</td><td>Co-Owner</td></tr>
+    <tr><td>Expel</td><td>Send a visitor off the island</td><td>Co-Owner</td></tr>
+    <tr><td>Change name</td><td>Rename the island</td><td>Co-Owner</td></tr>
+    <tr><td>Set spawn</td><td>Change the island spawn</td><td>Co-Owner</td></tr>
+    <tr><td>Trust / Untrust</td><td>Trust a player, or remove trust</td><td>Co-Owner</td></tr>
+    <tr><td>Set rank</td><td>Change a player's rank</td><td>Co-Owner</td></tr>
+    <tr><td>Change permissions</td><td>Change which rank each permission needs</td><td>Co-Owner</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>More ores and better loot</h2>
+<ul>
+  <li><strong>Underground:</strong> diamond ore added, and more iron ore.</li>
+  <li><strong>Dungeon:</strong> all ore types added, including deepslate ores. New chests with diamonds, or with obsidian, a lava bucket and gold ingots.</li>
+  <li><strong>The Nether:</strong> iron and diamond ore added, plus the obsidian, lava bucket and gold chest.</li>
+  <li><strong>Deep Dark:</strong> deepslate iron and deepslate diamond ore added.</li>
+  <li><strong>Ocean and Jungle:</strong> a new rare chest with oak logs, diamonds and gold ingots.</li>
+</ul>
+
+<h2>Small fixes</h2>
+<ul>
+  <li>When you invite someone, the message now shows their name.</li>
+  <li>When you kick someone, the message now shows who you kicked.</li>
+</ul>
+<p class="note">Found a bug? Report it at <a href="https://feedback.in-sky.eu">feedback.in-sky.eu</a> or tell us on <a href="https://discord.in-sky.eu">Discord</a>.</p>
+</article>
+<p class="pager"><a href="/updates/1.1.1-beta/">← 1.1.1-BETA</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>IN-SKY.EU</strong> · Server address: <code>mc.in-sky.eu</code> · Java Edition 26.3 · Open beta</p>
+    <p><a href="https://discord.in-sky.eu">Discord</a> · <a href="https://feedback.in-sky.eu">Report a bug</a> · <a href="/feed.xml">RSS feed</a></p>
+    <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>IN-SKY.EU updates</title>
+  <link>https://in-sky.eu/updates/</link>
+  <description>mc.in-sky.eu: a vanilla-style OneBlock server where every island is its own private world.</description>
+  <language>en</language>
+  <item>
+    <title>Update 1.1.3.0: island ranks, trusted players and permissions</title>
+    <link>https://in-sky.eu/updates/1.1.3.0-beta/</link>
+    <guid>https://in-sky.eu/updates/1.1.3.0-beta/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+    <description>Give friends a rank, trust players to build without joining your team, and choose which rank can do what on your island. Plus more ores and diamonds in several phases.</description>
+  </item>
+  <item>
+    <title>Update 1.1.1: sidebar scoreboard</title>
+    <link>https://in-sky.eu/updates/1.1.1-beta/</link>
+    <guid>https://in-sky.eu/updates/1.1.1-beta/</guid>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    <description>A new sidebar shows your phase, blocks mined, blocks until the next phase, island level and border tier.</description>
+  </item>
+  <item>
+    <title>Update 1.1: Minecraft 26.3, new phases and safer islands</title>
+    <link>https://in-sky.eu/updates/1.1-beta/</link>
+    <guid>https://in-sky.eu/updates/1.1-beta/</guid>
+    <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    <description>Support for Minecraft Java 26.3, a new set of 21 phases that loops at 16,000 blocks, better island protection, a safer /is reset, and many fixes to invites and teams.</description>
+  </item>
+</channel>
+</rss>
